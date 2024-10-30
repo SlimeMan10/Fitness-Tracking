@@ -1,0 +1,65 @@
+/*
+  Name: Justin Hernandez-Tovalin
+  Date: September 26, 2024
+  Section: AE Kathryn
+  This is the styles.css file for my fitness tracker project. It applies styles to the fitness
+  tracker page, ensuring proper layout and design for workout routines, weight tracking, and
+  instructional video links. The theme uses a dark background with contrasting text colors,
+  along with flexbox for alignment and responsiveness across devices.
+*/
+body {
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: 'poppins', sans-serif;
+}
+/*
+  Gives Flex to p, section, img, and h2 elements to reduce redundancy.
+*/
+.flex, .workout {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p, section, img, li {
+  color: white;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:visited, h1 {
+  color: blue;
+}
+
+a:hover, .create-workout h3 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.workout {
+  background-color: gray;
+  border-radius: 20px;
+  padding: auto;
+  width: 100%;
+}
+
+li {
+  list-style-position: inside;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Justin Hernandez-Tovalin
+  September 26, 2024
+  AE Kathryn
+
+  This file is part of my fitness tracker project. It includes a workout plan and progress tracker.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fitness Tracker Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+  </head>
+  <body class="flex">
+    <header>
+      <h1>Fitness Tracker</h1>
+      <nav>
+        <p>Workouts | Progress | Account</p>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <hgroup>
+          <h2>Justin's Fitness Tracker</h2>
+        </hgroup>
+        <!--Here is the id date in order for it to be changed-->
+        <p id="current-date"></p>
+        <article class="create-workout">
+          <h2>Today's Workout</h2>
+          <h3>Create Workout</h3>
+
+          <!-- Correct label and input for workout name -->
+          <label for="workout-name-1">Workout Name</label>
+          <input type="text" id="workout-name-1" name="workout-name">
+          <br>
+
+          <!-- Exercise details -->
+          <div id="exercise-container">
+            <label for="exercise-name-1">Exercise Name</label>
+            <input type="text" id="exercise-name-1" name="exercise-name">
+
+            <label for="set-1">Sets</label>
+            <input type="text" id="set-1" name="set">
+
+            <label for="reps-1">Reps</label>
+            <input type="text" id="reps-1" name="reps">
+
+            <label for="weight-1">Weight</label>
+            <input type="text" id="weight-1" name="weight">
+            <p class="delete-exercise">delete</p>
+          </div>
+
+          <br>
+
+          <!-- Buttons -->
+          <button id="add-exercise">Add Another Exercise</button>
+          <button id="finish">Finish Making Workout</button>
+        </article>
+      </section>
+
+      <section>
+        <h2>Weight Progress</h2>
+        <h3>Today's Info</h3>
+        <p>Today weigh-in: 180lbs, rolling average weigh-in: 183.4lbs</p>
+        <figure>
+          <img src="https://xceleratemath.com/algebra/images/graph-y=-2x+5.gif" alt="Graph of weight progress">
+          <figcaption>Weight progress graph</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <aside>
+        <h3>Workout Tips</h3>
+        <p>Remember to hydrate and warm up before your workout.</p>
+      </aside>
+      <p>
+        All workout form tutorials come from John Meadows/MountainDog1 on YouTube
+        <a href="https://www.youtube.com/@mountaindog1">Link to Channel here</a>
+      </p>
+      <p>&copy; 2024 Fitness Tracker (name in progress)</p>
+    </footer>
+  </body>
+</html>
